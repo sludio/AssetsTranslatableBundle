@@ -1,0 +1,15 @@
+{
+   	"type": "symfony-bundle"
+    ,"description": "A Symfony2 bundle for translatable form in symfony2 / sonata admin."
+    ,"keywords": [ "translatable" ]
+    ,"homepage": "https://gist.slud.io"
+    ,"license": "MIT"
+    ,"version": "0.0.1-dev"
+    ,"target-dir": "Assets/TranslatableBundle"
+    ,"autoload": {
+        "psr-0": { "Assets\\TranslatableBundle": "" }
+    }
+    ,"require": {
+        "php": ">=5.3.3"
+    }
+}

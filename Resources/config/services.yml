@@ -1,0 +1,10 @@
+services:
+    assets.form.type.translator:
+        class:     Assets\TranslatableBundle\Form\Type\TranslatorType
+        arguments:  ['%assets_translatable.locales%','@assets.translatablemanager', '@translator']
+        tags:
+            -  { name: form.type, alias: translations }
+
+    assets.translatablemanager:
+        class: Assets\TranslatableBundle\Helpers\TranslatableManager
+        arguments: ["@doctrine"]
